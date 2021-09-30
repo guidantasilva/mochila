@@ -1,0 +1,1 @@
+console.log("eu estou no arquivo app.js")
