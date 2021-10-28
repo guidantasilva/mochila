@@ -1,0 +1,46 @@
+*{
+    font-family:'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color: springgreen;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    font-weight: bold;
+}
+
+.nav-bar{
+    display: flex;
+    gap: 25px;
+}
+
+@media(max-width:350px){
+    p{
+        width: 25%;
+    }
+
+    .nav-bar{
+        width: 75%;
+        gap: 10px;
+    }
+}
+@media(max-width:150px){
+    header{
+        flex-direction: column;
+    }
+    .nav-bar{
+        flex-direction: column;
+    }
+}

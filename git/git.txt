@@ -1,0 +1,5 @@
+comando git
+- git init -> incia repositorio
+- git add -> adiciona todos os arquivos no repositorio
+- git commit -m "comentario"
+- git checkout -b nomeDaBranch
