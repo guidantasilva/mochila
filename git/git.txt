@@ -3,3 +3,8 @@ comando git
 - git add -> adiciona todos os arquivos no repositorio
 - git commit -m "comentario"
 - git checkout -b nomeDaBranch
+
+
+PROCESSOS DO DIA A DIA
+-git status
+-git add .
