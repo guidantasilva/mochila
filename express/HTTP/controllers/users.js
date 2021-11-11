@@ -1,17 +1,46 @@
-function getDados(req, res){
+function trazerDados(req, res){
 //controller
-    res.send('agora você chamou o getDados')
+    res.json([{
+        id:154,
+        nome: 'Guilherme',
+        email: 'guiasbfysf@naurnga.com',
+        senha: '123'
+    },
+    {
+
+
+        id:153,
+        nome: 'Alvaro',
+        email: 'guiasbfysf@naurnga.com',
+        senha: '123'
+    }])
     //controller
 }
 
-function cadastrarDados(req, res){
+function inserirDados(req, res){
     //controller
     //processo de castro
-        res.send('ok minha rota retornou isto')
+    console.log(req.body)
+        res.send('inserindo dados' + req.body.email)
         //controller
     }
+//alteração de dados 
+    function alterarDados(req, res){
+        //controller
+        console.log(req.body)
+        console.log(req.params)
+            res.send('você esta alterando dados')
+            //controller
+        }
 
+        function deletarDados(req, res){
+            //controller
+            console.log(req.params)
+            res.send("registro deletado")
+        }
     module.exports ={
-        getDados,
-        cadastrarDados
+        inserirDados,
+        trazerDados,
+        alterarDados,
+        deletarDados
     }

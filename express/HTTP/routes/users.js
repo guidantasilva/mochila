@@ -1,10 +1,14 @@
 var express = require('express');
 var router = express.Router();
-var { getDados, cadastrarDados }= require('../controllers/users');
+var { trazerDados, inserirDados, alterarDados, deletarDados }= require('../controllers/users');
 
 /* GET users listing. */
-router.get('/', getDados);
+router.get('/', trazerDados);
 
-router.get('/cadastrar', cadastrarDados);
+router.post('/inserir', inserirDados);
+
+router.put('/alterar/:id', alterarDados)
+
+router.delete('/deletar/:id', deletarDados)
 
 module.exports = router;
